@@ -10,7 +10,7 @@ public class NMayoryMenor4 {
         double[] numeros = new double[10];
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Ingrese 10 números cualquiera:");
+        System.out.println("Ingrese 10 números:");
 
         for (int i = 0; i < 10; i++) {
             System.out.print("Número " + (i + 1) + ": ");
