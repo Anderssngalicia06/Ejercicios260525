@@ -15,10 +15,10 @@ public class Nivel2Preguntas {
         this.ent = new Scanner(System.in);
 
         this.preguntas = new String[] {
-                "El Salvador es el país más pequeño de Centroamérica.",
-                "La moneda oficial de El Salvador es el córdoba.",
-                "El Salvador tiene acceso tanto al Océano Atlántico como al Océano Pacífico.",
-                "El café es uno de los principales productos de exportación de El Salvador."
+                "El cuerpo humano tiene 206 huesos.",
+                "La montaña con mayor altura en el mundo es el cerro verde.",
+                "El salvador ha ganado 3 mundiales de futbol.",
+                "Rusia es el pais mas grande del mundo."
         };
 
         this.respuestas = new String[] {
@@ -31,12 +31,12 @@ public class Nivel2Preguntas {
 
     private void puntajeVerdadero() {
         if (respuesta.equalsIgnoreCase("Verdadero")) {
-            System.out.println("Correcto Brrrrravo :)");
-            System.out.println("Ganaste 20 puntos, estás en tu PRIME");
+            System.out.println("Felicidades es correcto!! :)");
+            System.out.println("Ganaste 20 puntos");
             puntaje += 20;
         } else {
-            System.out.println("Incorrecto, volvemos a caer en el mismo error");
-            System.out.println("HAZ PERDIDO 10 PUNTOS POR ENCULADO");
+            System.out.println("Incorrecto, vuelve a intentarlo");
+            System.out.println("Perdiste 10 puntos");
             puntaje -= 10;
         }
         System.out.println();
@@ -44,12 +44,12 @@ public class Nivel2Preguntas {
 
     private void puntajeFalso() {
         if (respuesta.equalsIgnoreCase("Falso")) {
-            System.out.println("Correcto Brrrrravo :)");
-            System.out.println("Ganaste 20 puntos, estás en tu PRIME");
+            System.out.println("Felicidades es correcto!! :)");
+            System.out.println("Ganaste 20 puntos");
             puntaje += 20;
         } else {
-            System.out.println("Incorrecto, volvemos a caer en el mismo error");
-            System.out.println("HAZ PERDIDO 10 PUNTOS POR ENCULADO");
+            System.out.println("Incorrecto, vuelve a intentarlo");
+            System.out.println("Perdiste 10 puntos");
             puntaje -= 10;
         }
         System.out.println();
