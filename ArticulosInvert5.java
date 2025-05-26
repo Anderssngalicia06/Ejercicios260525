@@ -6,7 +6,7 @@ public class ArticulosInvert5 {
         Scanner scanner = new Scanner(System.in);
         String[][] articulos = new String[3][3];
 
-        // Llenar la matriz con los artículos
+        
         System.out.println("Ingrese 9 nombres de dieferentes artículos:");
         for (int fila = 0; fila < 3; fila++) {
             for (int columna = 0; columna < 3; columna++) {
@@ -15,13 +15,12 @@ public class ArticulosInvert5 {
             }
         }
 
-        // Mostrar la matriz con las filas invertidas
         System.out.println("\nContenido de la matriz con filas invertidas:");
-        for (int fila = 2; fila >= 0; fila--) { // empieza desde la última fila
+        for (int fila = 2; fila >= 0; fila--) { 
             for (int columna = 0; columna < 3; columna++) {
                 System.out.print(articulos[fila][columna] + "\t");
             }
-            System.out.println(); // salto de línea después de cada fila
+            System.out.println(); 
         }
 
         scanner.close();
